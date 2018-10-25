@@ -4,11 +4,16 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import fastClick from 'fastclick'
-import './assets/style/reset.css'
-import './assets/style/border.css'
+import Mint from 'mint-ui'
+import './assets/style/index.styl'
+import 'font-awesome/css/font-awesome.css'
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+import 'swiper/dist/css/swiper.css'
 
 Vue.config.productionTip = false
 fastClick.attach(document.body)
+Vue.use(Mint)
+Vue.use(VueAwesomeSwiper)
 
 /* eslint-disable no-new */
 new Vue({
