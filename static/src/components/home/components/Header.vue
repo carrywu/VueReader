@@ -32,12 +32,10 @@ export default{
       display flex
       justify-content space-between
       color $bgcolor
-      margin  0.01rem 0.1rem 0.0.1rem 0.1rem
     .header-text
         text-align center
         line-height 2rem
         font-weight 800
-        margin-left 0.5rem;
     .header-icon
         padding 4px
         text-align center

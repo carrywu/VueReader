@@ -40,8 +40,8 @@ export default{
 <style  scoped lang="stylus" rel="stylesheet/stylus">
  @import '~@/assets/style/varibles.styl'
  .wrapperbox
-  margin 0.5rem auto 0 auto;
-  width 17rem
+  margin 0 10px 0 10px
+  width 19rem
   box-sizing: border-box;
   .wrapper >>>  .swiper-pagination-bullet-active
     background $bgcolor !important

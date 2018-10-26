@@ -1,5 +1,5 @@
 <template>
-<div class="mainbox">
+<div>
 <home-header></home-header>
 <header-swipe></header-swipe>
 <home-input></home-input>
@@ -32,8 +32,9 @@ export default{
 
 </script>
 <style  scoped lang="stylus" rel="stylesheet/stylus">
-.mainbox
-    background #f6f7f9
+.mint-swipe
+  height 200px;
+  overflow hidden;
 .banner
     width: 100%
     height: 100px;
