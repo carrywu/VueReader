@@ -1,8 +1,10 @@
 <template>
 <div class="mainbox">
 <home-header></home-header>
+<home-nav></home-nav>
 <header-swipe></header-swipe>
 <home-input></home-input>
+
 </div>
 </template>
 
@@ -10,12 +12,14 @@
 import HomeHeader from './components/Header.vue'
 import HeaderSwipe from './components/Swipe.vue'
 import HomeInput from './components/Input.vue'
+import HomeNav from './components/Nav.vue'
 export default{
   name: 'Home',
   components: {
     HomeHeader,
     HeaderSwipe,
-    HomeInput
+    HomeInput,
+    HomeNav
   },
   data () {
     return {
