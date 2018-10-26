@@ -2,7 +2,7 @@
 <div class="inputbox">
     <form action="">
         <input type="text" placeholder="斗罗大陆" class="input iconfont">
-        <button class="search-btn">搜索</button>
+        <button class="search-btn iconfont icon-search">&#xe651;搜索</button>
     </form>
 </div>
 </template>
@@ -16,12 +16,13 @@ export default{
 <style lang="stylus" rel="stylesheet/stylus">
  @import '~@/assets/style/varibles.styl'
 .inputbox
-     width 380px;
+     width 17.8rem
      height 2rem
+     margin 0.5rem 1rem 1rem 1rem
     .input
         height 1.5rem
-        width 75%;
-        margin  0.8rem ;
+        width 70%;
+        margin  0.2rem ;
         border 0.05rem solid #FF6347;
         border-radius: 1rem
         outline none
@@ -38,4 +39,6 @@ export default{
         display: inline-block;
         font-size: 0.6rem;
         margin-left -0.4rem
+    .icon-search
+        font-size 15px;
 </style>
