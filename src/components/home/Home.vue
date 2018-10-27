@@ -9,10 +9,11 @@
 </template>
 
 <script>
-import HomeHeader from './components/Header.vue'
-import HeaderSwipe from './components/Swipe.vue'
+import HomeHeader from '@/components/common/Header.vue'
+import HeaderSwipe from '@/components/common/Swipe.vue'
 import HomeInput from './components/Input.vue'
 import HomeNav from './components/Nav.vue'
+import axios from 'axios'
 export default{
   name: 'Home',
   components: {
@@ -21,6 +22,7 @@ export default{
     HomeInput,
     HomeNav
   },
+
   data () {
     return {
       banner: [
@@ -31,7 +33,21 @@ export default{
 
       ]
     }
+  },
+
+  methods: {
+    getHomeInfo () {
+      axios.get('/readApi/sub-categories')
+        .then(this.getHomeInfoSucc)
+    },
+    getHomeInfoSucc (res) {
+      console.log(res)
+    }
+  },
+  mounted () {
+    this.getHomeInfo()
   }
+
 }
 
 </script>

@@ -106,9 +106,9 @@ export default{
         margin-left 0.5rem
         box-sizing border-box
         border-radius 2rem
-        -webkit-box-shadow:0px 3px 3px #c8c8c8 
-        -moz-box-shadow:0px 3px 3px #c8c8c8 
-        box-shadow:0px 3px 3px #c8c8c8 
+        -webkit-box-shadow:0px 3px 3px #c8c8c8
+        -moz-box-shadow:0px 3px 3px #c8c8c8
+        box-shadow:0px 3px 3px #c8c8c8
     .icon-search
         font-size 15px;
 .module-header
